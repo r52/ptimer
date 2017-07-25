@@ -1,29 +1,23 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>PTimerClass</class>
- <widget class="QMainWindow" name="PTimerClass" >
-  <property name="objectName" >
-   <string notr="true">PTimerClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QMainWindow" name="PTimerClass">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>305</width>
+    <height>132</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>PTimer</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget"/>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="ptimer.qrc"/>
+  <include location="ptimer.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>

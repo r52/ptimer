@@ -1,0 +1,5 @@
+QLabel {
+    background: #222;
+    color: qlineargradient(x1:240, y1:0, x2:240, y2:100, stop: 0 #29CC54, stop: 1 #FFFFFF);
+    font-size: 75px;
+}
