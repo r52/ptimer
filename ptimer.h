@@ -11,12 +11,12 @@ QT_FORWARD_DECLARE_CLASS(QLabel)
 
 using namespace std::chrono_literals;
 
+using dur_s  = std::chrono::duration<double>;
+using tpoint = std::chrono::time_point<std::chrono::high_resolution_clock>;
+
 class PTimer : public QMainWindow
 {
     Q_OBJECT;
-
-    using dur_s  = std::chrono::duration<double>;
-    using tpoint = std::chrono::time_point<std::chrono::high_resolution_clock>;
 
 public:
     PTimer(QWidget* parent = Q_NULLPTR);
@@ -44,11 +44,12 @@ private:
 
     std::unique_ptr<QTimer> m_timer;
     QLabel*                 m_timelabel;
-    QAction*                m_startPause;
-    QAction*                m_reset;
 
     // context menu
     QMenu*   m_Menu;
+    QAction* m_startPause;
+    QAction* m_reset;
+    QAction* m_edittime;
     QAction* m_showMsAction;
     QAction* m_showFulltimeAction;
 };
